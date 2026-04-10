@@ -7,7 +7,7 @@ const STATUS_CONFIG: Record<
   { label: string; color: string; bg: string; border: string; glow: string; icon: string }
 > = {
   realistis: {
-    label: "Target Realistis",
+    label: "Mantap, Bisalah Ini!",
     color: "text-emerald-400",
     bg: "bg-emerald-400/8",
     border: "border-emerald-400/30",
@@ -15,7 +15,7 @@ const STATUS_CONFIG: Record<
     icon: "✓",
   },
   ketat: {
-    label: "Ketat, Tapi Bisa",
+    label: "Mepet Cuy, Hemat-Hemat Dah!",
     color: "text-amber-400",
     bg: "bg-amber-400/8",
     border: "border-amber-400/30",
@@ -23,7 +23,7 @@ const STATUS_CONFIG: Record<
     icon: "⚡",
   },
   tidak_realistis: {
-    label: "Perlu Penyesuaian",
+    label: "Ampas Sih Ini! Mesti Cari Cara Lain Deh",
     color: "text-rose-400",
     bg: "bg-rose-400/8",
     border: "border-rose-400/30",
