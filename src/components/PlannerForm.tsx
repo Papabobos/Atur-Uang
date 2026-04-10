@@ -25,7 +25,7 @@ export default function PlannerForm({
     <div className="flex flex-col gap-6">
       {/* Target Keuangan */}
       <div className="flex flex-col gap-4">
-        <SectionLabel icon="◎" label="Target Keuangan" />
+        <SectionLabel icon="◎" label="Target Barang Inceran" />
         <CurrencyInput
           label="Harga Barang Yang Diincer"
           value={input.targetAmount}
@@ -45,7 +45,7 @@ export default function PlannerForm({
 
       {/* Waktu */}
       <div className="flex flex-col gap-4">
-        <SectionLabel icon="◷" label="Jangka Waktu" />
+        <SectionLabel icon="◷" label="Berapa Lama" />
         <div className="flex gap-3">
           <div className="flex flex-col gap-1.5 flex-1">
             <label className="text-xs font-medium uppercase tracking-widest text-slate-400">
@@ -89,19 +89,19 @@ export default function PlannerForm({
 
       {/* Keuangan Bulanan */}
       <div className="flex flex-col gap-4">
-        <SectionLabel icon="◈" label="Keuangan Bulanan" />
+        <SectionLabel icon="◈" label="Duit Tiap Bulan" />
         <CurrencyInput
-          label="Penghasilan Bulanan"
+          label="Duit Masuk Bulanan"
           value={input.monthlyIncome}
           onChange={(v) => onUpdate("monthlyIncome", v)}
-          hint="Total pemasukan per bulan (gaji, bisnis, dll)"
+          hint="Total duit yang masuk tiap bulan (gaji, bisnis, dll)"
           required
         />
         <CurrencyInput
-          label="Pengeluaran Bulanan"
+          label="Duit Keluar Bulanan"
           value={input.monthlyExpense}
           onChange={(v) => onUpdate("monthlyExpense", v)}
-          hint="Total pengeluaran rutin per bulan"
+          hint="Total duit rutin keluar tiap bulan"
         />
       </div>
 
@@ -116,7 +116,7 @@ export default function PlannerForm({
               : "cursor-not-allowed bg-ink-700 text-slate-500"
           }`}
         >
-          {hasCalculated ? "Hitung Ulang" : "Hitung Rencana"}
+          {hasCalculated ? "Coba Itung Yang Lain Ya" : "Itung Dah Target gue!"}
         </button>
         {hasCalculated && (
           <button
