@@ -25,31 +25,31 @@ export default function PlannerResultView({ result }: PlannerResultProps) {
       {/* Main Metric */}
       <div className="rounded-2xl border border-ink-700 bg-ink-800 p-5">
         <p className="text-xs uppercase tracking-widest text-slate-500">
-          Wajib nabung per bulan
+          Wajib Ngumpulin Duit Tiap Bulan
         </p>
         <p className="mt-1 font-display text-3xl font-normal text-amber-400">
           {formatCurrency(result.monthlySavingNeeded)}
         </p>
         <p className="mt-1 text-xs text-slate-500">
-          {formatPercent(result.savingRatio)} dari penghasilan · selama {timeLabel}
+          {formatPercent(result.savingRatio)} dari duit yang didapet · selama {timeLabel}
         </p>
       </div>
 
       {/* Stats Grid */}
       <div className="grid grid-cols-2 gap-3">
         <StatCard
-          label="Sisa Target"
+          label="Perlu duit"
           value={formatCurrency(result.remainingTarget)}
-          sub="yang perlu ditabung"
+          sub="buat dikumpulin"
         />
         <StatCard
-          label="Surplus Saat Ini"
+          label="Lebihannya"
           value={formatCurrency(result.currentMonthlySurplus)}
-          sub="per bulan"
+          sub="tiap bulan"
           highlight={result.currentMonthlySurplus < result.monthlySavingNeeded}
         />
         <StatCard
-          label="Proyeksi Tabungan"
+          label="Kira-kira dapet"
           value={formatCurrency(result.projectedSavings)}
           sub={`dalam ${timeLabel}`}
         />
@@ -62,7 +62,7 @@ export default function PlannerResultView({ result }: PlannerResultProps) {
                 : `${result.projectedMonths} bln`
               : "—"
           }
-          sub="dgn surplus saat ini"
+          sub="dengan lebihan duit sekarang"
         />
       </div>
 
@@ -138,7 +138,7 @@ function CashflowBar({
 
   return (
     <div className="flex flex-col gap-2 rounded-xl border border-ink-700 bg-ink-800 p-4">
-      <p className="text-xs uppercase tracking-widest text-slate-500">Alokasi Penghasilan</p>
+      <p className="text-xs uppercase tracking-widest text-slate-500">Duitnya Kemana Aja?</p>
       <div className="flex h-2.5 overflow-hidden rounded-full bg-ink-700">
         <div
           className="h-full bg-rose-400/70 transition-all duration-700"
