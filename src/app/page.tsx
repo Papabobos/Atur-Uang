@@ -69,7 +69,7 @@ export default function Home() {
 
         {/* Footer */}
         <footer className="mt-16 text-center text-xs text-slate-700">
-          Itungannya perkiraan doang ya · Kalau mau serius, coba konsultasi ke perencana keuangan beneran · Dibuat dengan ❤️ oleh{"Papabobos"}
+          Itungannya perkiraan doang ya · Kalau mau serius, coba konsultasi ke perencana keuangan beneran · Dibuat dengan ❤️ oleh {"Papabobos"}
         </footer>
       </div>
     </main>
