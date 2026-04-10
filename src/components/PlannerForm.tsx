@@ -27,17 +27,17 @@ export default function PlannerForm({
       <div className="flex flex-col gap-4">
         <SectionLabel icon="◎" label="Target Keuangan" />
         <CurrencyInput
-          label="Jumlah Target"
+          label="Harga Barang Yang Diincer"
           value={input.targetAmount}
           onChange={(v) => onUpdate("targetAmount", v)}
-          hint="Masukkan total dana yang ingin dicapai"
+          hint="Masukin jumlah duit yang dibutuhin"
           required
         />
         <CurrencyInput
-          label="Harga Barang Yang Diincer"
+          label="Duit Lo Sekarang Ada Berapa?"
           value={input.currentSavings}
           onChange={(v) => onUpdate("currentSavings", v)}
-          hint="Dana yang sudah tersimpan sekarang"
+          hint="Uang yang lo pegang sekarang ada berapa?"
         />
       </div>
 
