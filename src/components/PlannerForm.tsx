@@ -116,7 +116,7 @@ export default function PlannerForm({
               : "cursor-not-allowed bg-ink-700 text-slate-500"
           }`}
         >
-          {hasCalculated ? "Coba Itung Yang Lain Ya" : "Itung Dah Target gue!"}
+          {hasCalculated ? "Coba Itung Yang Lain Ya" : "Itung Dah Target Gue!"}
         </button>
         {hasCalculated && (
           <button
