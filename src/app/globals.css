@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&family=JetBrains+Mono:wght@400;500;600&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #0a0a0f;
+}
+
+html {
+  background-color: var(--bg);
+}
+
+body {
+  background-color: var(--bg);
+  font-family: "DM Sans", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-track {
+  background: #111118;
+}
+::-webkit-scrollbar-thumb {
+  background: #252532;
+  border-radius: 4px;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+@layer utilities {
+  .bg-ink-950 { background-color: #0A0A0F; }
+  .bg-ink-900 { background-color: #111118; }
+  .bg-ink-800 { background-color: #1A1A24; }
+  .bg-ink-700 { background-color: #252532; }
+  .border-ink-700 { border-color: #252532; }
+  .border-ink-800 { border-color: #1A1A24; }
+  
+  .bg-amber-400\/8 { background-color: rgba(251,191,36,0.08); }
+  .bg-emerald-400\/8 { background-color: rgba(52,211,153,0.08); }
+  .bg-rose-400\/8 { background-color: rgba(251,113,133,0.08); }
+  .bg-rose-400\/5 { background-color: rgba(251,113,133,0.05); }
+}
