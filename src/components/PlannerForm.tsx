@@ -34,7 +34,7 @@ export default function PlannerForm({
           required
         />
         <CurrencyInput
-          label="Tabungan Saat Ini"
+          label="Harga Barang Yang Diincer"
           value={input.currentSavings}
           onChange={(v) => onUpdate("currentSavings", v)}
           hint="Dana yang sudah tersimpan sekarang"
