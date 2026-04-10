@@ -25,16 +25,15 @@ export default function Home() {
           <div className="mb-2 flex items-center gap-2">
             <div className="h-1.5 w-6 rounded-full bg-amber-400" />
             <span className="text-xs uppercase tracking-[0.2em] text-slate-500">
-              Perencanaan Keuangan
+              Yuk Atur Duitnya
             </span>
           </div>
           <h1 className="font-display text-4xl font-normal text-slate-100 md:text-5xl">
-            Financial
-            <em className="ml-3 text-amber-400 not-italic">Planner</em>
+            Atur
+            <em className="ml-3 text-amber-400 not-italic">Duitnya</em>
           </h1>
           <p className="mt-3 max-w-md text-sm leading-relaxed text-slate-500">
-            Masukkan data keuangan Anda dan dapatkan analisis apakah target Anda
-            realistis — lengkap dengan rekomendasi.
+            Kasih tau mau nyimpen duit berapa, ntar diitungin — lengkap pake rekomendasi.
           </p>
         </header>
 
@@ -70,7 +69,7 @@ export default function Home() {
 
         {/* Footer */}
         <footer className="mt-16 text-center text-xs text-slate-700">
-          Kalkulasi bersifat estimasi · Konsultasikan dengan perencana keuangan profesional
+          Itungannya perkiraan doang ya · Kalau mau serius, coba konsultasi ke perencana keuangan beneran · Dibuat dengan ❤️ oleh{" "}
         </footer>
       </div>
     </main>
