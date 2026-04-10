@@ -25,7 +25,7 @@ export default function PlannerResultView({ result }: PlannerResultProps) {
       {/* Main Metric */}
       <div className="rounded-2xl border border-ink-700 bg-ink-800 p-5">
         <p className="text-xs uppercase tracking-widest text-slate-500">
-          Kebutuhan Tabungan per Bulan
+          Wajib nabung per bulan
         </p>
         <p className="mt-1 font-display text-3xl font-normal text-amber-400">
           {formatCurrency(result.monthlySavingNeeded)}
